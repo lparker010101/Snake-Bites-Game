@@ -28,7 +28,7 @@ namespace SnakeAttackGame
             int appleXSDim = 0;
             int appleYSDim = 0;
 
-            decimal gameSpeed = 120m;
+            decimal gameSpeed = 150m;
 
             bool isGameOn = true;
             bool ifWallHit = false;
@@ -110,22 +110,22 @@ namespace SnakeAttackGame
                     if (applesEaten <= 1)
                     {
                         Console.SetCursorPosition(18, 24);
-                        Console.WriteLine("Maybe you shouldn't play games anymore");
+                        Console.WriteLine("You can do better than that! TRY AGAIN!");
                     }
                     else if (applesEaten <= 5)
                     {
                         Console.SetCursorPosition(18, 24);
-                        Console.WriteLine("Just terrible, keep practicing");
+                        Console.WriteLine("Better! But keep practicing!");
                     }
                     else if (applesEaten <= 15)
                     {
                         Console.SetCursorPosition(18, 24);
-                        Console.WriteLine("You might have potential?");
+                        Console.WriteLine("You MIGHT have potential!");
                     }
                     else if (applesEaten <= 30)
                     {
                         Console.SetCursorPosition(18, 24);
-                        Console.WriteLine("Absolute stud");
+                        Console.WriteLine("ROCKSTAR STATUS!");
                     }
 
 
@@ -133,7 +133,7 @@ namespace SnakeAttackGame
                 //Place-Holder
                 Again:
                     Console.SetCursorPosition(15, 26);
-                    Console.WriteLine("Press Enter to play again or press E to exit");
+                    Console.WriteLine("Press Enter to play again or press E to exit.");
 
 
                     //This if statement allows the user to choose if they want to exit or continue playing
@@ -152,7 +152,7 @@ namespace SnakeAttackGame
                     {
                         Console.Clear();
                         Console.SetCursorPosition(25, 22);
-                        Console.WriteLine("You pressed the wrong key");
+                        Console.WriteLine("You pressed the wrong key!");
 
                         //This allows the user to re-enter a command
                         goto Again;
@@ -232,7 +232,7 @@ namespace SnakeAttackGame
 
             }
 
-            //Erase last part of sake
+            //Erase last part of snake
             Console.SetCursorPosition(xPosIn[applesEaten + 1], yPosIn[applesEaten + 1]);
 
             Console.WriteLine(" ");
